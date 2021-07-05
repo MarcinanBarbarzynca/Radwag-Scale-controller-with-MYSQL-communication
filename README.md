@@ -4,8 +4,6 @@
 <a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160725.jpg" align="left" height="100" width="100" ></a>
 <a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/gui.png" height="100" width="100" ></a>
 
-
-
 # What is this?
 Its a python app that is used to controll industrial Radwag scale. It use tkinter gui to display mass obtained by serial communication with scale. User is obligated to use controller connected to usb port to "SEND" result to server, "TARE" the scale and "WITHDRAW" the result from server. 
 
@@ -57,9 +55,9 @@ Możesz szybko przesyłać wyniki z wagi do serwera bazodanowego. Możesz budowa
 ## Będzie jeszcze instrukcja instalacji
 
 ### Related
-[Remote controller for this scale](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
-[How to read serial from scale](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "Jak zbudować komunikator")
-[Scale emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Wagi emulator")
+[Kontroler, pilot do wagi](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
+[Jak zbudować komunikator](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "Jak zbudować komunikator")
+[Wagi emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Wagi emulator")
 
 #### Contact to me :)
 Write 10 mails to p_ir@o2.pl
