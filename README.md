@@ -21,9 +21,9 @@ If You want to send results from your scale directly to MySQL database its now p
 3. Adapt my code. 
 
 ### Related
-[Remote controller for this scale](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Remote controller for this scale")
-[How to read serial from scale](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "How to read serial from scale")
-[Scale emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Scale emulator")
+- [Remote controller for this scale](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Remote controller for this scale")
+- [How to read serial from scale](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "How to read serial from scale")
+- [Scale emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Scale emulator")
 
 #### Contact to me :)
 Write 10 mails to p_ir@o2.pl
@@ -54,10 +54,10 @@ Możesz szybko przesyłać wyniki z wagi do serwera bazodanowego. Możesz budowa
 
 ## Będzie jeszcze instrukcja instalacji
 
-### Related
-[Kontroler, pilot do wagi](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
-[Jak zbudować komunikator](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "Jak zbudować komunikator")
-[Wagi emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Wagi emulator")
+## Powiązane
+- [Kontroler, pilot do wagi](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
+- [Jak zbudować komunikator](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "Jak zbudować komunikator")
+- [Wagi emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Wagi emulator")
 
 #### Contact to me :)
 Write 10 mails to p_ir@o2.pl
