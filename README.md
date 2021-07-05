@@ -35,3 +35,37 @@ Write 10 mails to p_ir@o2.pl
 - It works slow. 
 - Its crashing when it cannot open serial port
 - It need some clearence. 
+
+------------
+
+# Co to jest?
+To aplikacja pythonowa która pozwala na komunikację między komputerem, pilotem a wagą przemysłową Radwaga. Używa gui wygenerowanego w Tkinterze i wyświetla stan odczytany z portu seryjnego wagi. Użytkownik pomoże sterować procesami przy użyciu trzech przycisków na dodatkowym pilocie: "WYŚLIJ" który wysyła stan wagi do serwera z bazą danych, "TARUJ" który resetuje komunikację z wagą i rozkazuje jej odpowiednimi komendami tak aby przywrócić komunikację z komputerem, "COFNIJ" który cofa ostatnio wysłany wynik do serwera (inaczej wysyła wartość ujemną)
+
+##  Why You need this?
+Możesz szybko przesyłać wyniki z wagi do serwera bazodanowego. Możesz budować sobie własne makra przy użyciu mojego kodu. 
+
+## Moduły użyte
+- pySerial
+- Requests
+- time
+
+## Jak używać?
+1. Podłącz wagę do USB komputera. Możesz zakupić przejściówki RS232 --> usb lub samodzielnie takie coś wykonać. Ja używam modułów arduino CH340 i dodatków MAX3232
+2. Sprawdź czy waga coś nadaje. Aby tego dokonać możesz podłączyć piny RX i TX do przejściówki MAX3232 lub wykorzystać inny sposób np. użyć arduino mega z wieloma portami uart. Następnie wykorzystaj kod pushthru aby podsłuchiwać komunikację między wagą a komputerem. Naucz się rozmawiać ze swoją wagą.
+3. Adaptuj się
+
+## Będzie jeszcze instrukcja instalacji
+
+### Related
+[Remote controller for this scale](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
+[How to read serial from scale](https://github.com/MarcinanBarbarzynca/Read-two-Arduino-serial-with-PYSerial "Jak zbudować komunikator")
+[Scale emulator](https://github.com/MarcinanBarbarzynca/Emulator-wagi-radwag-arduino "Wagi emulator")
+
+#### Contact to me :)
+Write 10 mails to p_ir@o2.pl
+
+
+# BUGS! and how to deal with them
+- Działa wolno. Wymaga optymalizacji i czyszczenia bufora odczytu i zapisu.
+- Wywala się w momencie błędu użytkownika i braku portu com.
+- Wymaga jeszcze trochę szlifów w kodzie. Bo wygląda on źle. 
