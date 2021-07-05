@@ -1,9 +1,10 @@
-<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160643.jpg" align="left" height="48" width="48" ></a>
-<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160713.jpg" align="left" height="48" width="48" ></a>
-<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160719.jpg" align="left" height="48" width="48" ></a>
-<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160725.jpg" align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160643.jpg" align="left" height="100" width="100" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160713.jpg" align="left" height="100" width="100" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160719.jpg" align="left" height="100" width="100" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160725.jpg" align="left" height="100" width="100" ></a>
 
 
+------------
 # What is this?
 Its a python app that is used to controll industrial Radwag scale. It use tkinter gui to display mass obtained by serial communication with scale. User is obligated to use controller connected to usb port to "SEND" result to server, "TARE" the scale and "WITHDRAW" the result from server. 
 
