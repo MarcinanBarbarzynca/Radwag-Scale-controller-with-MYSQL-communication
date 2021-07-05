@@ -1,8 +1,7 @@
-![alt text](https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160643.jpg) 
-![alt text](https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160713.jpg)
-![alt text](https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160719.jpg)
-![alt text](https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160725.jpg)
-
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160643.jpg" align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160713.jpg" align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160719.jpg" align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/MarcinanBarbarzynca/Radwag-Scale-controller-with-MYSQL-communication/blob/main/images/IMG_20210705_160725.jpg" align="left" height="48" width="48" ></a>
 
 
 # What is this?
