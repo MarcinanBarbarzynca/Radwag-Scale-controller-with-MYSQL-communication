@@ -1,0 +1,15 @@
+Tu znajdują się ustawienia dla programu obsługującego wagi. Zedytuj go wg. swojego uznania. Od 7mej linii tego pliku powinny znajdować się informacje jakie identyfikatory urządzeń są wagą a jakie są pilotem.
+1. Podłącz urządzenia do portów USB i uruchom skrypt "Wypisz identyfikatory urządzeń podpiętych do portów USB.py"
+2. Uzyskane identyfikatory powinny automatycznie wkleić się tu w tym dokumencie. (Jeżeli chcesz zresetować te ustawienia to zmień nazwę pliku ustawienia.txt)
+3. Określ pary urządzeń, tj. waga ma swój pilot. Pary są łączone znakiem "&". Jeżeli waga niema pilota to możliwe będzie sterowanie nią tylko za pomocą myszy. Nie przypisuj dwóch pilotów do jednej wagi i odwrotnie.
+4. Przykład: Waga lewa piecowa^SCALE_ID#788313221&PILOT_ID#pilot_one|pozX=0|pozY=0
+5. Po uzyskaniu pewności że wszystko jest ok zmień zmienną na gotowe true. Dopuki ta zmienna nie będzie ustawiona to nie będzie działać xD
+gotowe=false
+SCALE_ID#692670
+PILOT_ID#pilot_dwa
+SCALE_ID#999999
+PILOT_ID#pilot_jeden
+pairs
+Waga lewa piecowa^SCALE_ID#692670&PILOT_ID#pilot_1|pozX=0|pozY=0
+serial_settings
+bound_rate=9600
