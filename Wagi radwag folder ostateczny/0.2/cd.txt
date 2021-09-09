@@ -1,0 +1,1 @@
+cd "C:\Users\MarcinanBarbarzynca\Desktop\Wagi radwag folder ostateczny\0.2" & python gui0.2.py "13-Waga lewa piecowa|COM10|COM15|0|0"

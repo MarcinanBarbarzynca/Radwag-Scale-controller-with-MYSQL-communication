@@ -10,6 +10,6 @@ PILOT_ID#pilot_dwa
 SCALE_ID#999999
 PILOT_ID#pilot_jeden
 pairs
-Waga lewa piecowa^SCALE_ID#692670&PILOT_ID#pilot_1|pozX=0|pozY=0
+13-Waga lewa piecowa^SCALE_ID#692670&PILOT_ID#pilot_1|pozX=0|pozY=0
 serial_settings
 bound_rate=9600

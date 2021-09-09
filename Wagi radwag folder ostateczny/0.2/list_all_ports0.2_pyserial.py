@@ -1,5 +1,6 @@
 import io
 import os
+import subprocess
 import serial
 import time
 import serial.tools.list_ports
@@ -178,8 +179,11 @@ def splituj_argumenty_z_napisu(zdanie,slownik):
         pozY= ((zdanie.split("|"))[2].split("="))[1]
         print("POZ_X:"+pozX+" POZ_Y:"+pozY)
         print('"'+nazwa_wagi+"|"+SCALE_PORT+"|"+PILOT_PORT+"|"+pozX+"|"+pozY+'"')
-        os.system('gui0.2.py "'+nazwa_wagi+"|"+SCALE_PORT+"|"+PILOT_PORT+"|"+pozX+"|"+pozY)
-        
+        #os.system('gui0.2.py "'+nazwa_wagi+"|"+SCALE_PORT+"|"+PILOT_PORT+"|"+pozX+"|"+pozY)
+        subprocess.call(
+            'python gui0.2.py "'+nazwa_wagi+"|"+SCALE_PORT+"|"+PILOT_PORT+"|"+pozX+"|"+pozY+'"',
+            shell=True
+        )
         
 print("Linie do dalszego splita")
 lista_par = []

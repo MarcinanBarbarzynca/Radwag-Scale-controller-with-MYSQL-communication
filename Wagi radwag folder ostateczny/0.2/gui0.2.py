@@ -14,6 +14,10 @@ print ('Argument List:', str(sys.argv))
 
 global new_mass,separated_mass,tare_part
 global id_wagi_na_serwerze
+ip_serwera = "10.186.10.2/test/insert.php"
+#ip_serwera = ("http://localhost/test/insert.php")
+#sys.argv=["","13-Waga lewa piecowa|COM10|COM15|0|0"]
+
 
 try:
         lista_argumentow = sys.argv[1].split("|")     
@@ -106,9 +110,9 @@ def update_mass():
                 stan_wagi.config(text="Wytarowano")
         if(pilot_message ==(b't\r\n') or pilot_message ==('t')):
                 print("Wysyłam tarowanie do wagi")
-                #tare_btnClickFunction()
-                serial_write(scale,"T\r\n")
-                tare_change_text()
+                tare_btnClickFunction()
+                #serial_write(scale,"T\r\n")
+                #tare_change_text()
                 tare_part.set(value="1")
                 #masa.after(500, cd_of_tare)
                 #serial_write(scale,"C1\r\n")
@@ -134,6 +138,16 @@ def check_server_connection():
 
 ######################################### Funkcje przycisków
 
+def wyslij_do_serwera(dane,id_wagi):
+        response = requests.get(ip_serwera+ "?dane="+str(dane)+'&nazwa='+str(id_wagi))
+        wiadomosc = response.content
+        print(wiadomosc)
+        if(wiadomosc == "zapisalem"):
+                sended_mass = new_mass
+                return 1
+        else:
+               return 0
+
 #Po kliknięciu wyslij
 #1. Wyswietl w konsoli info o tym że coś napisano
 #2. Wywietl mase ktora jest ostatnio odczytana i zapisana w zmiennej new_mass
@@ -141,22 +155,24 @@ def send_btnClickFunction():
         print(window_title+':send')
         print(new_mass.get())
         print("Rozpoczynam komunikacje z serwerem")
-        stan_wagi.config(text="Nadaje")
-        #response = requests.get('10.186.10.2/test/insert_dla_wag.php'+ "?data="+str(new_mass))
-        #wiadomosc = response.content
-        #print(wiadomosc)
-        #if(wiadomosc == "zapisalem"):
-        #        sended_mass = new_mass
-        #        return 1
-        #else:
-        #       return 0
-
+        stan_wagi.config(text="Nadaje")#SI        0.000 kg 
+        wartosc_w_gramach=((root.getvar(name="new_mass")).replace("SI","")).strip()
+        if(int(wartosc_w_gramach.find("kg"))>-1):
+           wartosc_w_gramach=wartosc_w_gramach.replace("kg","")
+           #wartosc_w_gramach=wartosc_w_gramach.replace(".",",")
+           wartosc_w_gramach=float(wartosc_w_gramach.strip())*1000
+        else:
+                wartosc_w_gramach.replace("g","")
+        print(wartosc_w_gramach)
+        wyslij_do_serwera(str(wartosc_w_gramach),str((window_title.split("-"))[0]))
 
 def tare_btnClickFunction():
         print(window_title+':tare')
-        #serial_write(scale,"C1\r\n")
-        serial_write(scale,"T\n\r")
-        stan_wagi.config(text="Taruje")
+        #serial_write(scale,"T\n\r")
+        #stan_wagi.config(text="Taruje")
+        serial_write(scale,"T\r\n")
+        tare_change_text()
+        #tare_part.set(value="1")
 
 def tare_change_text():
         stan_wagi.config(text="Taruje")
@@ -166,14 +182,8 @@ def minus_send_btnClickFunction():
         print(new_mass.get())
         print("Rozpoczynam komunikacje z serwerem")
         stan_wagi.config(text="Cofam")
-        #response = requests.get('10.186.10.2/test/insert_dla_wag.php'+ "?data=-"+new_mass)
-        #sended_mass = 0
-        #wiadomosc = response.content
-        #print(wiadomosc)
-        #if(wiadomosc == "zapisalem"):
-        #        return 1
-        #else:
-        #        return 0
+        wyslij_do_serwera(str(-1*new_mass),str((window_title.split("%"))[0]))
+
 
 #########################################END Funkcje przycisków
 
