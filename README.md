@@ -53,6 +53,12 @@ Możesz szybko przesyłać wyniki z wagi do serwera bazodanowego. Możesz budowa
 3. Adaptuj się
 
 ## Będzie jeszcze instrukcja instalacji
+1. Postaw element na szalce
+2. Zaczekaj aż masa się ustabilizuje
+3. Naciśnij odpowiedni przycisk: 
+ - Wyślij -> wysyła masę z szalki do serwera
+ - Cofnij -> wysyła masę do serwera, ale z ujemnym znakiem
+ - Taruj -> Wysyła do wagi rozkaz tarowania i pisania bez przerwy w jednostce podstawowej. 
 
 ## Powiązane
 - [Kontroler, pilot do wagi](https://github.com/MarcinanBarbarzynca/Pilot-do-komputera-Arduino-NANO "Kontroler, pilot do wagi")
