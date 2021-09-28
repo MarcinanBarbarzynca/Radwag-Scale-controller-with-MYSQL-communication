@@ -52,6 +52,17 @@ Możesz szybko przesyłać wyniki z wagi do serwera bazodanowego. Możesz budowa
 2. Sprawdź czy waga coś nadaje. Aby tego dokonać możesz podłączyć piny RX i TX do przejściówki MAX3232 lub wykorzystać inny sposób np. użyć arduino mega z wieloma portami uart. Następnie wykorzystaj kod pushthru aby podsłuchiwać komunikację między wagą a komputerem. Naucz się rozmawiać ze swoją wagą.
 3. Adaptuj się
 
+1. Uruchom list_all_ports0.2_pyserial.py. Ten program skanuje dostępne porty w poszukiwaniu wag i przypisanych do nich pilotów.
+2. Zaczekaj aż uruchomi się okienko wagi. Może to potrwać 3*liczba portów com sekund... czyli w przypadku 8 portów com będzie to trwało ok 30 sekund. Czas ten jest można w przyszłości zoptymalizować, ale teraz działa wystarczająco dobrze. 
+3. Jeżeli się nie uruchamia to przejdź do procedury naprawiania
+
+- Wyświetlają się okienka z komunikatami o błędach!
+
+## Jak naprawiać?
+- Otwórz wybrany program w edytorze python IDE. Uruchom i sprawdź co wypisuje ci konsola pythona. Nie usunąłem jeszcze wiadomości służących do debugowania. 
+- Uruchom Arduino IDE i sprawdź co wypisują porty do których jest podpięta waga i pilot. 
+- Odpowiednio zmień plik ustawienia.txt. Znajdują się tam pary pilot-waga zapisane z pomocą odpowiedniej sekwencji znaków
+
 ## Będzie jeszcze instrukcja instalacji
 1. Postaw element na szalce
 2. Zaczekaj aż masa się ustabilizuje
